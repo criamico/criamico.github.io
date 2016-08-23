@@ -262,6 +262,13 @@ footer img {
     background-attachment: scroll;
   }
 
+  #map {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 80%;
+    height: 300px;
+  }
+
   .project {
     width: 70%;
     margin: 35% 15%;
