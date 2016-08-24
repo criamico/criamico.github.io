@@ -47,6 +47,7 @@ h4{
 
 p{
     font-size: 1.4em;
+    line-height: 2em;
 }
 
 a{
@@ -119,7 +120,7 @@ main{
 
 section{
     padding-top: 50px;
-    margin-bottom: 6em;
+    margin-bottom: 100px;
 }
 
 .hero{
@@ -202,10 +203,8 @@ section{
     }
 }
 
-#about{
-    h3{
+.title{
         margin: 30px 0;
-    }
 }
 
 #cv-button{
@@ -213,11 +212,6 @@ section{
     margin: 30px 0;
 }
 
-#map {
-        margin-bottom: 40px;
-        width: 100%;
-        height: 400px;
-     }
 
 
 .grow {
@@ -257,39 +251,46 @@ footer{
 }
 
 // map styling
-.infoWindowContent{
-    color: $font-color-nav-active;
-    h2, h3 {
-        margin-top: 5px;
-        font-weight: normal;
+ #map{
+        margin: 0 auto;
+        margin-bottom: 40px;
+        width: 80%;
+        height: 300px;
     }
-    h2{
-        font-size: 1.8em;
-    }
-    h3{
-        font-size: 1.5em;
-    }
-    h4{
-        font-size: 1.2em;
-    }
-    p{
-        font-size: 1em;
-    }
-    img{
-        width: 70px;
-        float: left;
-        margin-right: 5px;
-    }
-    ul{
-        padding-left: 0;
-        list-style-type: none;
-        li{
-            margin-bottom: 20px;
+
+    .infoWindowContent{
+        color: $font-color-nav-active;
+        min-width: 280px;
+        max-width: 320px;
+        h3{
+            margin:0;
+            font-size: 1.3em;
+            font-weight: normal;
         }
+        h4{
+            font-size: 1.1em;
+        }
+        p{
+            font-size: 1em;
+        }
+        img{
+            width: 48px;
+            float: left;
+            margin-right: 3px;
+        }
+        ul{
+            padding-left: 0;
+            list-style-type: none;
+            li{
+                margin-bottom: 10px;
+            }
+        }
+
+
     }
 
 
-}
+
 
 /* extra small screens (screen < 600px) */
 @media screen and (max-width: $breakpoint-xs){
@@ -318,22 +319,29 @@ footer{
 
 
     .hero .wrapper{
-        padding: 5em 2em;
+        padding: 4em 2em;
         background-attachment:scroll;
     }
+    .hero{
+         h2, h3, p{
+            margin: 20px 0;
+        }
+    }
 
-    #map{
-        margin: 0 auto;
-        margin-bottom: 40px;
-        width: 80%;
-        height: 300px;
+    section{
+        margin: 15px 0;
     }
 
     .project{
-        width: 70%;
-        margin: 35% 15%;
+        width: 60%;
+        margin: 35% 20%;
         &:first-child{
                 margin-top: 5%;
+        }
+        .caption{
+            h4{
+                font-size: 1em;
+            }
         }
     }
 
@@ -346,11 +354,51 @@ footer{
         margin-bottom: 30px;
         }
     }
+
+
 }
 
 
 // ipad and most tablet fall here (600px < screen < 768px)
 @media screen and (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm){
+    h1{
+    font-size: 3em;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+
+    h3{
+        font-size: 2.3em;
+    }
+
+    h4{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1.3em;
+    }
+
+    section{
+        margin: 15px 0;
+    }
+    .contact{
+            margin: 5% auto;
+        }
+
+
+    .hero .wrapper{
+        padding: 4em 2em;
+        background-attachment:scroll;
+    }
+    .hero{
+         h2, h3, p{
+            margin: 10px 0;
+        }
+    }
+
      .project{
         width: calc((100% - 8%)/2);
         margin: 2%;
@@ -367,20 +415,6 @@ footer{
         -webkit-overflow-scrolling: touch;
     }
 
-    #map {
-        width: 100%;
-        height: 300px;
-     }
-
-
-     .infoWindowContent{
-        img{
-            width: 48px;
-        }
-        h4, p{
-            font-size: 1em;
-        }
-     }
 
     footer{
         .third{
@@ -423,7 +457,7 @@ footer{
 }
 
 // big screens, 992px < screen < 1200
-@media screen and (min-width:$breakpoint-md) and (max-width:$breakpoint-lg){
+@media screen and (min-width:$breakpoint-md) and (max-width:$breakpoint-lg) {
     .project{
         width: calc((100% - 8%)/2);
         margin: 4% 2%;
@@ -433,6 +467,7 @@ footer{
          height: 100%;
          overflow: hidden;
     }
+
 
 
 }
