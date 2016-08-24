@@ -124,6 +124,7 @@ section {
 
 #about li {
   font-size: 1.4em;
+  margin: 1em 0;
 }
 
 .project {
@@ -382,6 +383,7 @@ footer img {
 
   #about li {
     font-size: 1.2em;
+    margin: 1em 0;
   }
 
   .hero .wrapper {
