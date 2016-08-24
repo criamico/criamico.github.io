@@ -122,6 +122,10 @@ section {
   font-size: 1em;
 }
 
+#about li {
+  font-size: 1.4em;
+}
+
 .project {
   height: 300px;
   width: calc((100% - 12%)/3);
@@ -232,37 +236,8 @@ footer img {
 
 /* extra small screens (screen < 600px) */
 @media screen and (max-width: 599px) {
-  h1 {
-    font-size: 4em;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h3 {
-    font-size: 2.3em;
-  }
-
-  h4 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
-
   .contact {
     margin: 5% auto;
-  }
-
-  .hero .wrapper {
-    padding: 4em 2em;
-    background-attachment: scroll;
-  }
-
-  .hero h2, .hero h3, .hero p {
-    margin: 20px 0;
   }
 
   section {
@@ -289,41 +264,21 @@ footer img {
   }
 }
 @media screen and (min-width: 599px) and (max-width: 768px) {
-  h1 {
-    font-size: 3em;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h3 {
-    font-size: 2.3em;
-  }
-
-  h4 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1.3em;
-  }
-
   section {
     margin: 15px 0;
   }
 
   .contact {
-    margin: 5% auto;
+    margin: 20% auto;
   }
 
   .hero .wrapper {
-    padding: 4em 2em;
+    padding: 15% 5%;
     background-attachment: scroll;
+    -webkit-overflow-scrolling: touch;
   }
-
   .hero h2, .hero h3, .hero p {
-    margin: 10px 0;
+    margin: 5% 0;
   }
 
   .project {
@@ -333,12 +288,6 @@ footer img {
 
   .contact {
     margin: 5% auto;
-  }
-
-  .hero .wrapper {
-    padding: 5em 2em;
-    background-attachment: scroll;
-    -webkit-overflow-scrolling: touch;
   }
 
   footer .third {
@@ -408,6 +357,39 @@ footer img {
   }
   .navbar .navbar-default .navbar-collapse, .navbar .navbar-default .navbar-form, .nav-fixed .navbar-default .navbar-collapse, .nav-fixed .navbar-default .navbar-form {
     border-color: transparent;
+  }
+}
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.9em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  #about li {
+    font-size: 1.2em;
+  }
+
+  .hero .wrapper {
+    padding: 4em 2em;
+    background-attachment: scroll;
+  }
+  .hero h2, .hero h3, .hero p {
+    margin: 0.2em 0;
   }
 }
 

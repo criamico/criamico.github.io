@@ -82,9 +82,9 @@
 
             ];
 
-            var zoomValue = 3;
+            var zoomValue = 2;
             if (windowWidth < 768)
-                zoomValue = 1;
+                zoomValue = 0;
 
             var mapOptions = {
                 center: {lat: 39.914036, lng: -39.778708},

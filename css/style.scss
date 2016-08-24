@@ -1,5 +1,6 @@
 $breakpoint-nav:700px;
 $breakpoint-xs:599px;
+$breakpoint-mobile-landscape:640px;
 $breakpoint-sm:768px;
 $breakpoint-md: 992px;
 $breakpoint-lg: 1200px;
@@ -161,7 +162,11 @@ section{
 
 }
 
-
+#about{
+    li{
+        font-size: 1.4em;
+    }
+}
 
 .project{
     height: 300px;
@@ -291,42 +296,13 @@ footer{
 
 
 
-
 /* extra small screens (screen < 600px) */
 @media screen and (max-width: $breakpoint-xs){
-    h1{
-    font-size: 4em;
-    }
 
-    h2{
-        font-size: 2.5em;
-    }
-
-    h3{
-        font-size: 2.3em;
-    }
-
-    h4{
-        font-size: 1.5em;
-    }
-
-    p{
-        font-size: 1.2em;
-    }
     .contact{
             margin: 5% auto;
         }
 
-
-    .hero .wrapper{
-        padding: 4em 2em;
-        background-attachment:scroll;
-    }
-    .hero{
-         h2, h3, p{
-            margin: 20px 0;
-        }
-    }
 
     section{
         margin: 15px 0;
@@ -359,43 +335,27 @@ footer{
 }
 
 
+
+
 // ipad and most tablet fall here (600px < screen < 768px)
 @media screen and (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm){
-    h1{
-    font-size: 3em;
-    }
-
-    h2{
-        font-size: 2.5em;
-    }
-
-    h3{
-        font-size: 2.3em;
-    }
-
-    h4{
-        font-size: 1.5em;
-    }
-
-    p{
-        font-size: 1.3em;
-    }
-
     section{
         margin: 15px 0;
     }
     .contact{
-            margin: 5% auto;
+            margin: 20% auto;
         }
 
 
-    .hero .wrapper{
-        padding: 4em 2em;
-        background-attachment:scroll;
-    }
     .hero{
+        // necessary to display correctly the hero image in apple devices!
+        .wrapper{
+            padding: 15% 5%;
+            background-attachment:scroll;
+            -webkit-overflow-scrolling: touch;
+        }
          h2, h3, p{
-            margin: 10px 0;
+            margin: 5% 0;
         }
     }
 
@@ -408,12 +368,6 @@ footer{
         margin: 5% auto;
     }
 
-    // necessary to display correctly the hero image in apple devices!
-    .hero .wrapper{
-        padding: 5em 2em;
-        background-attachment:scroll;
-        -webkit-overflow-scrolling: touch;
-    }
 
 
     footer{
@@ -507,5 +461,42 @@ footer{
             border-color: transparent;
         }
 
+    }
+}
+
+@media screen and (max-width: $breakpoint-mobile-landscape){
+    h1{
+    font-size: 4em;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+
+    h3{
+        font-size: 1.9em;
+    }
+
+    h4{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1.2em;
+    }
+    #about{
+    li{
+        font-size: 1.2em;
+    }
+}
+
+    .hero{
+        .wrapper{
+            padding: 4em 2em;
+            background-attachment:scroll;
+        }
+         h2, h3, p{
+            margin: 0.2em 0;
+        }
     }
 }
