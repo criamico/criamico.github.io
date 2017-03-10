@@ -77,7 +77,7 @@
                 {
                     'coord': {lat: 53.349823, lng: -6.264010},
                     'image': 'img/pin-blue.png',
-                    'description': '<h3>Dublin, Ireland</h3><ul><li><h4>Current</h4><p>Front-end Developer</p></li></ul>',
+                    'description': '<h3>Dublin, Ireland</h3><ul><li><img src="img/zendesk-logo.png"><h4>Current</br>Zendesk Int. LTD</h4><p>Software Engineer intern</p></li></ul>',
                 },
 
             ];
